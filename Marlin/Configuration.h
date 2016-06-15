@@ -249,9 +249,10 @@
   #define K1 0.95 //smoothing factor within the PID
 
   // Hephestos i3
-  #define  DEFAULT_Kp 23.05
-  #define  DEFAULT_Ki 2.00
-  #define  DEFAULT_Kd 66.47
+    #define  DEFAULT_Kp 32.82
+    #define  DEFAULT_Ki 5.21
+    #define  DEFAULT_Kd 51.72
+
 
 #endif // PIDTEMP
 
@@ -602,14 +603,14 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 // MV Added
   #define X_PROBE_OFFSET_FROM_EXTRUDER -29
   #define Y_PROBE_OFFSET_FROM_EXTRUDER -29
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.8
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -2.0
 
 
   #define XY_TRAVEL_SPEED 8000         // X and Y axis travel speed between probes, in mm/min.
 
   #define Z_RAISE_BEFORE_PROBING 15   // How much the Z axis will be raised before traveling to the first probing point.
   #define Z_RAISE_BETWEEN_PROBINGS 5  // How much the Z axis will be raised when traveling from between next probing points.
-  #define Z_RAISE_AFTER_PROBING 15    // How much the Z axis will be raised after the last probing point.
+  #define Z_RAISE_AFTER_PROBING 10    // How much the Z axis will be raised after the last probing point.
 
   //#define Z_PROBE_END_SCRIPT "G1 Z10 F12000\nG1 X15 Y330\nG1 Z0.5\nG1 Z10" // These commands will be executed in the end of G29 routine.
                                                                              // Useful to retract a deployable Z probe.
